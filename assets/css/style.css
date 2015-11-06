@@ -255,6 +255,7 @@ pre code {
     margin-top: 10px;
     margin-bottom: 15px;
     line-height: 12px;
+    white-space: pre;
 }
 
 code[class*="language-"], pre[class*="language-"] {
