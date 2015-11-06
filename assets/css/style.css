@@ -78,15 +78,15 @@ acronym, abbr {
 
 
 h1 {
-	font-size: 17px;
+	font-size: 2em;
 	margin: 0 0 10px 0;
 }
 h2 {
-	font-size: 15px;
+	font-size: 1.5em;
 	margin: 0 0 10px 0;
 }
 h3 {
-	font-size: 14px;
+	font-size: 1.25em;
 	margin: 0 0 10px 0;
 }
 
@@ -321,22 +321,7 @@ code[class*="language-"], pre[class*="language-"] {
 
 }
 
-
-
-/*** Icons ***/
-@font-face {
-  font-family: 'solarthemeicons';
-  src: url('../fonts/solarthemeicons.eot');
-  src: url('../fonts/solarthemeicons.eot#iefix') format('embedded-opentype'),
-       url('../fonts/solarthemeicons.woff') format('woff'),
-       url('../fonts/solarthemeicons.ttf') format('truetype'),
-       url('../fonts/solarthemeicons.svg#solarthemeicons') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "solarthemeicons";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -350,13 +335,11 @@ code[class*="language-"], pre[class*="language-"] {
   line-height: 1.7;
 }
 
-.icon-sun:before { content: '\e801'; }
-.icon-anchor:before { content: '\e800'; }
+.icon-anchor:before { content: '\f13d'; }
 .icon-anchor {
 	font-size: 65%;
+	font-family: 'FontAwesome';
 }
-
-
 
 /*
  * Prism.js Syntax Highlighting
@@ -377,3 +360,6 @@ code[class*="language-"], pre[class*="language-"] {
 .token.placeholder,.token.variable { color: #268bd2; }
 .token.important { color: #dc322f; font-weight: bold; }
 .token.entity { cursor: help; }
+/*
+ * End Prism.js
+ */

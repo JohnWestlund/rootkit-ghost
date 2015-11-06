@@ -1,31 +1,31 @@
 html, body {
-	background-color: #002a35;
-	color: #839496;
+	background-color: #000;
+	color:            #aaa;
 }
 
 a, a:visited, a:active {
-	color: #2aa198;
-	border-color: #073642;
+	color:        #0a0;
+	border-color: #060;
 }
 
 a:hover {
-	background-color: #073642;
-	border-color: #073642;
-	color: #2aa198;
+	background-color: #333;
+	border-color:     #0a0;
+	color:            #0a0;
 }
 
 h1, h2, h3 {
-	color: #cb4b16;
+	color: #00a;
 }
 
 h1 a, h1 a:visited, h1 a:active {
-	color: #cb4b16;
+	color: #0a0;
 }
 
 h1 a:hover {
-	background-color: #073642;
-	border-color: #073642;
-	color: #cb4b16;
+	background-color: #333;
+	border-color: #0a0;
+	color:        #0a0;
 }
 
 article h1 a.anchor {
@@ -33,14 +33,86 @@ article h1 a.anchor {
 }
 
 blockquote {
-	border-color: #cb4b16;
+	border-color: #0a0;
 }
 
 #sidebar a:hover {
-	color: #2aa198;
-	background-color: #073642;
+	color:            #aaa;
+	background-color: #000;
 }
 
 #footer {
-	border-color: #073642;
+	border-color: #0a0;
 }
+
+/*
+ *  * Cursor blinking
+ *   */
+.blinking-cursor {
+  font-weight: 100;
+  color: #0f0;
+  -webkit-animation: 1.5s blink step-end infinite;
+  -moz-animation: 1.5s blink step-end infinite;
+  -ms-animation: 1.5s blink step-end infinite;
+  -o-animation: 1.5s blink step-end infinite;
+  animation: 1.5s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: #333; /* Fallback for older browsers */
+    color: rgba(0, 255, 0, 0.1);
+  }
+  50% {
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 255, 0, 0.5);
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: #333; /* Fallback for older browsers */
+    color: rgba(0, 255, 0, 0.1);
+  }
+  50% {
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 255, 0, 0.5);
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: #333; /* Fallback for older browsers */
+    color: rgba(0, 255, 0, 0.1);
+  }
+  50% {
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 255, 0, 0.5);
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: #333; /* Fallback for older browsers */
+    color: rgba(0, 255, 0, 0.1);
+  }
+  50% {
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 255, 0, 0.5);
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: #333; /* Fallback for older browsers */
+    color: rgba(0, 255, 0, 0.1);
+  }
+  50% {
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 255, 0, 0.5);
+  }
+}
+/*
+ *  * End Cursor Blinking
+ *   */
+
