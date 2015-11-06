@@ -52,7 +52,9 @@
 
     <div id="sidebar">
 
-      {{navigation}}
+      <div id="navigate">
+        {{navigation}}
+      </div>
 
       {{#post}}
       {{#if author}}
@@ -93,12 +95,9 @@
   <script src="{{asset 'js/blueimp-gallery.min.js'}}"></script>
   <script src="{{asset 'js/prism.js'}}"></script>
   <script>
-    envs: {
-        browser: true
-    }
     $(document).ready(function(){
       var postContent = $('.post-content');
-      $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
+      $('#navigate ul').mobileMenu({'topOptionText':'Menu','prependTo':'#navigate'});
       if (postContent.length) {
         postContent.find('img').on('click', function () {
           var img = $(this).attr('src');
