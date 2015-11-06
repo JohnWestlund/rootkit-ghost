@@ -57,7 +57,8 @@ sup { vertical-align: super; font-size: 0.85em; }
 sub { vertical-align: sub; font-size: 0.85em; }
 
 code {
-    font: 0.85em Monaco, Courier, Monospace;
+    font: 8px 'Press Start 2P';
+    white-space: nowrap;
 }
 
 blockquote {
@@ -253,6 +254,7 @@ pre code {
     padding: 6px 10px;
     margin-top: 10px;
     margin-bottom: 15px;
+    line-height: 12px;
 }
 
 code[class*="language-"], pre[class*="language-"] {
@@ -267,7 +269,7 @@ code[class*="language-"], pre[class*="language-"] {
 	white-space: pre-wrap;
 	word-break: break-all;
 	word-wrap: break-word;
-	font-family: Menlo, Monaco, "Courier New", monospace;
+	font-family: 'Press Start 2P', cursive;
 	font-size: 1em;
 	line-height: 1.5;
 	text-shadow: 0;
