@@ -88,10 +88,14 @@
 
   {{ghost_foot}}
 
+  <script src="{{asset 'js/jquery-1.11.3.min.js'}}"></script>
   <script src="{{asset 'js/jquery.mobilemenu.min.js'}}"></script>
   <script src="{{asset 'js/blueimp-gallery.min.js'}}"></script>
   <script src="{{asset 'js/prism.js'}}"></script>
   <script>
+    envs: {
+        browser: true
+    }
     $(document).ready(function(){
       var postContent = $('.post-content');
       $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
