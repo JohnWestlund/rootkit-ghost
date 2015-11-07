@@ -78,16 +78,22 @@ acronym, abbr {
 
 
 h1 {
-	font-size: 2em;
+	font: 32px 'VT323';
 	margin: 0 0 10px 0;
+	font-smooth: never;
+	-webkit-font-smoothing : none;
 }
 h2 {
-	font-size: 1.5em;
+	font: 24px 'VT323';
 	margin: 0 0 10px 0;
+	font-smooth: never;
+	-webkit-font-smoothing : none;
 }
 h3 {
-	font-size: 1.25em;
+	font: 16px 'VT323';
 	margin: 0 0 10px 0;
+	font-smooth: never;
+	-webkit-font-smoothing : none;
 }
 
 
@@ -105,6 +111,7 @@ h3 {
 .img-middle { vertical-align: middle; }
 .nopadding { padding: 0; }
 .nounderline { text-decoration: underline; }
+.root_red { color: #a00; }
 
 
 
@@ -120,7 +127,7 @@ h3 {
 	margin: 40px auto 50px auto;
 }
 #header h1 {
-	font-size: 32px;
+	font-size: 40px;
 	margin-bottom: 4px;
 }
 #header h1 a {
@@ -204,7 +211,6 @@ article {
 }
 
 article h1 {
-	font-size: 17px;
 	margin: 0 0 10px 0;
 }
 article h1 a {
@@ -269,7 +275,6 @@ code[class*="language-"], pre[class*="language-"] {
 	white-space: pre-wrap;
 	word-break: break-all;
 	word-wrap: break-word;
-	font-family: 'Roboto Mono';
 	font-size: 1em;
 	text-shadow: 0;
 }
