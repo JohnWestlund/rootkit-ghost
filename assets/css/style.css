@@ -78,19 +78,19 @@ acronym, abbr {
 
 
 h1 {
-	font: 32px 'VT323';
+	font: 40px 'Munro';
 	margin: 0 0 10px 0;
 	font-smooth: never;
 	-webkit-font-smoothing : none;
 }
 h2 {
-	font: 24px 'VT323';
+	font: 30px 'Munro';
 	margin: 0 0 10px 0;
 	font-smooth: never;
 	-webkit-font-smoothing : none;
 }
 h3 {
-	font: 16px 'VT323';
+	font: 20px 'Munro';
 	margin: 0 0 10px 0;
 	font-smooth: never;
 	-webkit-font-smoothing : none;
@@ -127,7 +127,7 @@ h3 {
 	margin: 40px auto 50px auto;
 }
 #header h1 {
-	font-size: 40px;
+	font-size: 50px;
 	margin-bottom: 4px;
 }
 #header h1 a {
@@ -367,4 +367,23 @@ code[class*="language-"], pre[class*="language-"] {
 .token.entity { cursor: help; }
 /*
  * End Prism.js
+ */
+
+/*
+ * Webfont
+ */
+@font-face {
+    font-family: 'Munro';
+    src: url('../fonts/munro.eot');
+    src: url('../fonts/munro.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/munro.woff2') format('woff2'),
+         url('../fonts/munro.woff') format('woff'),
+         url('../fonts/munro.ttf') format('truetype'),
+         url('../fonts/munro.svg#munroregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*
+ * End Webfont
  */
