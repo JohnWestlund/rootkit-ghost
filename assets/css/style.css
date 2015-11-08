@@ -78,19 +78,19 @@ acronym, abbr {
 
 
 h1 {
-	font: 40px 'Munro';
+	font: 2.5em 'Munro';
 	margin: 0 0 10px 0;
 	font-smooth: never;
 	-webkit-font-smoothing : none;
 }
 h2 {
-	font: 30px 'Munro';
+	font: 2em 'Munro';
 	margin: 0 0 10px 0;
 	font-smooth: never;
 	-webkit-font-smoothing : none;
 }
 h3 {
-	font: 20px 'Munro';
+	font: 1.5em 'Munro';
 	margin: 0 0 10px 0;
 	font-smooth: never;
 	-webkit-font-smoothing : none;
@@ -127,7 +127,7 @@ h3 {
 	margin: 40px auto 50px auto;
 }
 #header h1 {
-	font-size: 50px;
+	font-size: 4em;
 	margin-bottom: 4px;
 }
 #header h1 a {
@@ -183,8 +183,8 @@ h3 {
 
 #sidebar a {
 	border: none;
-	font-family: "Helvetica Neue", "Helvetica", serif;
-	font-size: 1.2em;
+	font-family: 'Munro';
+	font-size: 2em;
 	padding: 2px 4px;
 }
 
