@@ -36,6 +36,10 @@ blockquote {
 	border-color: #0a0;
 }
 
+.post-content img {
+	box-shadow: 10px 10px 5px #0a0;
+}
+
 #sidebar a:hover {
 	color:            #aaa;
 	background-color: #000;
