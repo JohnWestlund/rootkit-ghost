@@ -200,9 +200,15 @@ h3 {
 	border-radius: 95px;
 	background-size: cover;
 	background-position: center;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	border-color: #0a0;
 }
 
-
+#sidebar .bio .avatar:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
 
 
 /*** Posts ***/
