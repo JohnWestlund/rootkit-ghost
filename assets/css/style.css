@@ -251,12 +251,12 @@ img.center {
 }
 
 code {
-	background-color: #073642;
+	background-color: #000;
 	color: #93a1a1;
-	border: 1px solid #2d6472;
+	border: 1px solid #0a0;
 	border-radius: 3px 3px 3px 3px;
-	padding-left: 1px;
-	padding-right: 1px;
+	padding-left: 2px;
+	padding-right: 3px;
 	white-space: pre;
 }
 
@@ -267,6 +267,9 @@ pre code {
 	margin-top: 10px;
 	margin-bottom: 15px;
 	white-space: pre;
+	background: linear-gradient( rgba(0, 0, 0, 0.2),
+		rgba(0, 0, 0, 0.6) ),
+		url('../img/stripe.gif');
 }
 
 code[class*="language-"], pre[class*="language-"] {
