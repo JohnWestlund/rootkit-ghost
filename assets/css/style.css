@@ -171,9 +171,9 @@ h3 {
 #sidebar {
 	position: absolute;
 	text-align: right;
-	width: 160px;
+	width: 185px;
 	top: 0;
-	left: -240px;
+	left: -220px;
 }
 
 #sidebar li {
