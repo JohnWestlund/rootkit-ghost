@@ -279,6 +279,10 @@ pre code {
 }
 
 pre.code {
+	background-color: #000;
+	color: #93a1a1;
+	border: 1px solid #0a0;
+	border-radius: 3px 3px 3px 3px;
         display: block;
         overflow: auto;
         padding: 6px 10px;
