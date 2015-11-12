@@ -53,6 +53,7 @@ blockquote {
  *  * Cursor blinking
  *   */
 .blinking-cursor {
+  font: 1em 'Roboto Mono';
   font-weight: 100;
   color: #0f0;
   -webkit-animation: 1.5s blink step-end infinite;
