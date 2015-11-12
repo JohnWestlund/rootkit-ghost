@@ -311,6 +311,9 @@ code[class*="language-"], pre[class*="language-"] {
 	float: right;
 }
 
+.slicknav_menu {
+    display:none;
+}
 
 
 /*** Media Queries ***/
@@ -339,6 +342,13 @@ code[class*="language-"], pre[class*="language-"] {
 		display: none;
 	}
 
+    #menu {
+        display:none;
+    }
+
+    .slicknav_menu {
+        display:block;
+    }
 }
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
@@ -402,3 +412,4 @@ code[class*="language-"], pre[class*="language-"] {
 /*
  * End Webfont
  */
+

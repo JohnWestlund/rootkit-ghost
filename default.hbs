@@ -20,6 +20,7 @@
   <link href="{{asset 'css/style.css'}}" rel="stylesheet" />
   <link href="{{asset 'css/colors-dark.css'}}" rel="stylesheet" />
   <link href="{{asset 'css/blueimp-gallery.min.css'}}" rel="stylesheet" />
+  <link href="{{asset 'css/slicknav.css'}}" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>         <!-- Code font -->
   <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>               <!-- Header font -->
   <!-- full list of icons at: https://fortawesome.github.io/Font-Awesome/icons/ -->
@@ -95,13 +96,14 @@
   {{ghost_foot}}
 
   <script src="{{asset 'js/jquery-1.11.3.min.js'}}"></script>
-  <script src="{{asset 'js/jquery.mobilemenu.min.js'}}"></script>
+  <script src="{{asset 'js/jquery.slicknav.min.js'}}"></script>
   <script src="{{asset 'js/blueimp-gallery.min.js'}}"></script>
   <script src="{{asset 'js/prism.js'}}"></script>
   <script>
     $(document).ready(function(){
       var postContent = $('.post-content');
-      $('#navigate ul').mobileMenu({'topOptionText':'Menu','prependTo':'#navigate'});
+      $('#navigate').slicknav();
+      $('ul.nav').attr('id', 'menu');
       if (postContent.length) {
         postContent.find('img').on('click', function () {
           var img = $(this).attr('src');
