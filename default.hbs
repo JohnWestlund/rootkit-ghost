@@ -102,8 +102,8 @@
   <script>
     $(document).ready(function(){
       var postContent = $('.post-content');
-      $('#navigate').slicknav();
       $('ul.nav').attr('id', 'menu');
+      $('#menu').slicknav();
       if (postContent.length) {
         postContent.find('img').on('click', function () {
           var img = $(this).attr('src');
