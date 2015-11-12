@@ -305,7 +305,6 @@ code[class*="language-"], pre[class*="language-"] {
 	hyphens: none;
 	white-space: pre;
 	white-space: pre-wrap;
-	word-break: break-all;
 	word-wrap: break-word;
 	font-size: 1em;
 	text-shadow: 0;
@@ -316,8 +315,8 @@ code[class*="language-"], pre[class*="language-"] {
 /*** Pagination ***/
 .postnavigation {
 	padding-top: 10px;
-    text-align: center;
-    font-size: 0.85em;
+	text-align: center;
+	font-size: 0.85em;
 }
 
 .postnavigation .left {
@@ -329,7 +328,7 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 .slicknav_menu {
-    display:none;
+	display:none;
 }
 
 
