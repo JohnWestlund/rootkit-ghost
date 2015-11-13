@@ -33,7 +33,7 @@ and set the properties:
 - `ga` your google analytics tracking code.
 - `gas_client` your google adsense client code.
 - `gas_slot` your google adsense ad slot code.
-- `ad_id` where on your side you would like the ads to appear, by default its appened to tags with the id='header'
+- `ad_id` where on your side you would like the ads to appear, by default its appened to tags with the `id='header'`
 
 After saving the file, you need to restart the ghost server, to make the changes work. And then you're all done!
 
@@ -47,7 +47,7 @@ A stylish theme for [Ghost](http://ghost.org/) blogs.
 Features
 --------
 
-* **Two color schemes** — One for _rootkit Dark_ and one for _rootkit Light_ (incomplete). Just swap the reference to the `colors-dark.css` file with `colors-light.css` if you don't like light-on-dark.
+* **Two color schemes** — One for _rootkit Dark_ and one for _rootkit Light_. Just swap the reference to the `colors-dark.css` file with `colors-light.css` if you don't like light-on-dark.
 * **Responsive Design** — rootkit adapts to fit any screen size.
 
 
@@ -84,7 +84,7 @@ Valid language classes include `language-markup`, `language-css`, `language-java
 To-Do
 -----
 
-* Complete light colored theme.
+* ...
 
 
 License
