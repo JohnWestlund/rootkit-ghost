@@ -136,16 +136,18 @@
 
   <!-- google adsense support -->
   <script>
-    var div = document.createElement('div');
-    div.className = 'googleAdSense';
-    div.innerHTML = '<!-- ' + setting.baseurl + ' --> \
-      <ins class="adsbygoogle" \
-        style="display:block" \
-        data-ad-client="' + setting.gas_client + '" \
-        data-ad-slot="' + setting.gas_slot + '" \
-        data-ad-format="auto"></ins>';
-  
-    document.getElementById(setting.ad_id).appendChild(div);
+  if (setting.gas_client && setting.gas_slot) {
+      var div = document.createElement('div');
+      div.className = 'googleAdSense';
+      div.innerHTML = '<!-- ' + setting.baseurl + ' --> \
+        <ins class="adsbygoogle" \
+          style="display:block" \
+          data-ad-client="' + setting.gas_client + '" \
+          data-ad-slot="' + setting.gas_slot + '" \
+          data-ad-format="auto"></ins>';
+
+      document.getElementById(setting.ad_id).appendChild(div);
+  }
   </script>
   
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
