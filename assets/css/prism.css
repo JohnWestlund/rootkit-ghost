@@ -7,8 +7,8 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #f8f8f2;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	// color: #f8f8f2;                        <v move to light/dark.css
+	// text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	direction: ltr;
 	text-align: left;
@@ -30,16 +30,17 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
+//	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
 	border-radius: 0.3em;
 }
 
-:not(pre) > code[class*="language-"],
+// Use BG color from the rest of the page
+/* :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	background: #272822;
-}
+} */
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
@@ -55,8 +56,14 @@ pre[class*="language-"] {
 	color: slategray;
 }
 
-.token.punctuation {
+// move to light/dark.css
+/* .token.punctuation {
 	color: #f8f8f2;
+} */
+
+// added
+.token.delimiter {
+	color: purple;
 }
 
 .namespace {
@@ -68,7 +75,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	color: #f92672;
+	color: darkorchid;
 }
 
 .token.boolean,
@@ -82,10 +89,11 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #a6e22e;
+	color: deeppink;
 }
 
-.token.operator,
+// moved to light/dark.css
+/* .token.operator,
 .token.entity,
 .token.url,
 .language-css .token.string,
@@ -93,15 +101,16 @@ pre[class*="language-"] {
 .token.variable {
 	color: #f8f8f2;
 }
+*/
 
 .token.atrule,
 .token.attr-value,
 .token.function {
-	color: #e6db74;
+	color: mediumorchid;
 }
 
 .token.keyword {
-	color: #66d9ef;
+	color: blue;
 }
 
 .token.regex,
@@ -173,8 +182,8 @@ div.prism-show-language {
 }
 
 div.prism-show-language > div.prism-show-language-label[data-language] {
-	color: black;
-	background-color: #CFCFCF;
+//	color: black;
+//	background-color: #CFCFCF;
 	display: inline-block;
 	position: absolute;
 	bottom: auto;
@@ -185,7 +194,7 @@ div.prism-show-language > div.prism-show-language-label[data-language] {
 	height: auto;
 	font-size: 0.9em;
 	border-radius: 0 0 0 5px;
-	padding: 0 0.5em;
+	padding: 0.25em 1em 0.4em 1em;
 	text-shadow: none;
 	z-index: 1;
 	-webkit-box-shadow: none;

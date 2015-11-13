@@ -62,11 +62,10 @@ pre code {
         display: block;
         overflow: auto;
         padding: 6px 10px;
-        margin-top: 10px;
         margin-bottom: 15px;
         white-space: pre;
         background: linear-gradient( rgba(255, 255, 255, 0.9),
-                rgba(255, 255, 255, 0.7) ),
+                rgba(255, 255, 255, 0.6) ),
                 url('../img/stripe.gif');
 }
 
@@ -89,13 +88,29 @@ pre.code {
 div.prism-show-language-label {
         text-align: right;
         border: 1px solid #0a0;
-        border-bottom-width: 0px;
         border-radius: 3px 3px 3px 3px;
         font: 1.2em 'Roboto Mono';
-        padding-right: 10px;
         background: linear-gradient( rgba(255, 255, 255, 0.7),
                 rgba(255, 255, 255, 0.9) ),
                 url('../img/stripe.gif');
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #333;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.token.punctuation {
+	color: #333;
+}
+
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+        color: darkblue;
 }
 
 /*
