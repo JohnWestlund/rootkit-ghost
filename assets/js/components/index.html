@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link href="prism.css" rel="stylesheet" />
+    <script src="prism.js"></script>
+  </head>
+
+  <body>
+    <p>Hello</p>
+
+    <pre class=" language-diff">
+      <code class=" language-diff">
+*** qcli.yml 2014-12-16 11:43:41.000000000 +0800
+--- /Users/uranusjr/Desktop/qcli.yml    2014-12-31 11:28:08.000000000 +0800
+***************
+*** 4,8 ****
+  project:
+      sources: "src/*.cpp"
+      headers: "src/*.h"
+!     qt: core
+  public_headers: "src/*.h"
+--- 4,8 ----
+  project:
+      sources: "src/*.cpp"
+      headers: "src/*.h"
+!     qt: core gui
+  public_headers: "src/*.h"
+      </code>
+    </pre>
+
+<h2>Strings</h2>
+<pre  class=" language-perl"><code class=" language-perl">q/foo bar baz/;
+q awhy not ?a;
+qw(foo bar baz) q{foo bar baz}
+q[foo bar baz] qq&lt;foo bar baz>
+"foo bar baz" 'foo bar baz' `foo bar baz`</code></pre>
+
+<h2>Regex</h2>
+<pre class=" language-perl"><code class=" language-perl">q/foo bar baz/;
+<m/foo/ s/foo/bar/
+m zfooz s zfoozbarz
+qr(foo) m{foo} s(foo)(bar) s{foo}{bar}
+m[foo] m&lt;foo> tr[foo][bar] s&lt;foo>&lt;bar>
+/foo/i
+</code></pre>
+
+<h2>Variables</h2>
+<pre class=" language-perl"><code class=" language-perl">q/foo bar baz/;
+$^V
+$element_count = scalar(@whatever);
+keys(%users) = 1000;
+$1, $_, %!;</code></pre>
+  </body>
+<html>

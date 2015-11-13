@@ -9,6 +9,7 @@
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+  <script src="{{asset 'js/prism.js'}}"></script>
   <script>
   var setting = {
     baseurl:    'http://xensoft.com',
@@ -16,8 +17,9 @@
     ga:         'UA-43244208-1',
     gas_client: 'ca-pub-0333905063777933',
     gas_slot:   '8822000487',
-    ad_id:      'header' 
+    ad_id:      'header',
   };
+  Prism.plugins.autoloader.languages_path = '/assets/js/components/';
   </script>
 
   <link href="{{asset 'css/style.css'}}" rel="stylesheet" />
@@ -101,7 +103,6 @@
   <script src="{{asset 'js/jquery-1.11.3.min.js'}}"></script>
   <script src="{{asset 'js/jquery.slicknav.min.js'}}"></script>
   <script src="{{asset 'js/blueimp-gallery.min.js'}}"></script>
-  <script src="{{asset 'js/prism.js'}}"></script>
 
   <!-- slicknav support -->
   <script>
