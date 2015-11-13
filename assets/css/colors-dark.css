@@ -92,15 +92,15 @@ div.prism-show-language-label {
 	border-bottom-width: 0px;
 	border-radius: 3px 3px 3px 3px;
 	font: 1.2em 'Roboto Mono';
-	padding-right;
+	padding-right: 10px;
 	background: linear-gradient( rgba(0, 0, 0, 0.6),
 		rgba(0, 64, 0, 0.6) ),
 		url('../img/stripe.gif');
 }
 
 /*
- *  * Cursor blinking
- *   */
+ * Cursor blinking
+ */
 .blinking-cursor {
   font: 1em 'Roboto Mono';
   font-weight: 100;
@@ -167,6 +167,6 @@ div.prism-show-language-label {
   }
 }
 /*
- *  * End Cursor Blinking
- *   */
+ * End Cursor Blinking
+ */
 
