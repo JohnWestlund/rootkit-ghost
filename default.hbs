@@ -11,9 +11,12 @@
   <![endif]-->
   <script>
   var setting = {
-    baseurl: 'http://xensoft.com',
-    disqus: 'xensoft',
-    ga: 'UA-43244208-1' 
+    baseurl:    'http://xensoft.com',
+    disqus:     'xensoft',
+    ga:         'UA-43244208-1',
+    gas_client: 'ca-pub-0333905063777933',
+    gas_slot:   '8822000487',
+    ad_id:      'header' 
   };
   </script>
 
@@ -99,6 +102,8 @@
   <script src="{{asset 'js/jquery.slicknav.min.js'}}"></script>
   <script src="{{asset 'js/blueimp-gallery.min.js'}}"></script>
   <script src="{{asset 'js/prism.js'}}"></script>
+
+  <!-- slicknav support -->
   <script>
     $(document).ready(function(){
       var postContent = $('.post-content');
@@ -112,7 +117,9 @@
       }
     });
   </script>
+  <!-- end slicknav support -->
 
+  <!-- google analytics support -->
   <script>
     // Google Analytics Script
     if (setting.ga) {
@@ -125,6 +132,27 @@
       ga('send', 'pageview');
     }
   </script>
+  <!-- end google analytics support -->
+
+  <!-- google adsense support -->
+  <script>
+    var div = document.createElement('div');
+    div.className = 'googleAdSense';
+    div.innerHTML = '<!-- ' + setting.baseurl + ' --> \
+      <ins class="adsbygoogle" \
+        style="display:block" \
+        data-ad-client="' + setting.gas_client + '" \
+        data-ad-slot="' + setting.gas_slot + '" \
+        data-ad-format="auto"></ins>';
+  
+    document.getElementById(setting.ad_id).appendChild(div);
+  </script>
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <!-- end google adsense support -->
 
 </body>
 </html>
