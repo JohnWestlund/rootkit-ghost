@@ -1,65 +1,76 @@
-Solar Theme for Ghost
+rootkit for Ghost
 =====================
-
-### A fork from [mattvh/solar-theme-ghost](https://github.com/mattvh/solar-theme-ghost)
 
 What's added ?
 --------
 
-- Improve stylesheet. Images in the mobile broswer will display well.
-- Using `background-image` instead of `<img />` tag. More flexible.
-- Optional Google Analytics and Disqus module. 
-- Add image gallery feature, using [blueimp-gallery](https://github.com/blueimp/Gallery)
+* Based on the Solar theme by [mattvh/solar-theme-ghost](https://github.com/mattvh/solar-theme-ghost)
+    * Changed mobilemenu to slicknav for mobile navigation
+    * Completely re-colored for *nix type goodness
+    * Avatar grayscale/color on rollover
+    * Makes use of 8-bit type fonts for retro feel
+    * Added google adsense support
 
-
-How to enable Google Analytics and Disqus ?
+How to enable Google Analytics, Disqus and Google AdSense ?
 --------
 
 Using your favorite editor, and edit the `default.hbs` file, find
 
 ```javascript
   var setting = {
-    disqusShortName: '',
-    ga: ''
+    baseurl:    'http://xensoft.com',
+    disqus:     'xensoft',
+    ga:         'UA-43244208-1',
+    gas_client: 'ca-pub-0333905063777933',
+    gas_slot:   '8822000487',
+    ad_id:      'header' 
   };
 ```
-and set the properties to your disqus short name and your google analytics track code.
-After saving the file, you need to restart the ghost server, to make the changes work. And then all done!
+
+and set the properties:
+- *baseurl* The base url of your site, used to help disqus keep track of which comments belong to which page.
+- *disques*  your disqus short name.
+- *ga* your google analytics tracking code.
+- *gas_client* your google adsense client code.
+- *gas_slot* your google adsense ad slot code.
+- *ad_id* where on your side you would like the ads to appear, by default its appened to tags with the id='header'
+
+After saving the file, you need to restart the ghost server, to make the changes work. And then you're all done!
 
 ----
 
-A stylish theme for [Ghost](http://ghost.org/) blogs, based on the [Solarized](http://ethanschoonover.com/solarized) color palette.
+A stylish theme for [Ghost](http://ghost.org/) blogs.
 
-![Screenshot](http://i.imgur.com/P94J69S.png)
+![Screenshot](http://imgur.com/R423ALS.png)
 
 
 Features
 --------
 
-* **Two color schemes** — One for Solarized Dark and one for Solarized Light. Just swap the reference to the `colors-dark.css` file with `colors-light.css` if you don't like light-on-dark.
-* **Responsive Design** — Solarized adapts to fit any screen size.
+* **Two color schemes** — One for _rootkit Dark_ and one for _rootkit Light_ (incomplete). Just swap the reference to the `colors-dark.css` file with `colors-light.css` if you don't like light-on-dark.
+* **Responsive Design** — rootkit adapts to fit any screen size.
 
 
 Installation
 ------------
 
-1. Clone the repository and upload the `solar` directory to your Ghost blog's `content/themes` folder.
+1. Clone the repository and upload the `rootkit` directory to your Ghost blog's `content/themes` folder.
 
-2. Go to the Settings page of the Ghost backend and select `solar` from the Theme dropdown.
+2. Restart Ghost.
 
-3. There is no step 3.
+3. Go to the Settings page of the Ghost backend and select `rootkit` from the Theme dropdown.
 
 
 Customization
 -------------
 
-Solar supports Ghost's logo and cover image features, and will work perfectly fine with or without them. If you wish to upload a cover image, it will appear above the rest of the page. An uploaded logo replaces the textual blog name. (If you later decide you don't want a logo or cover image, you can remove it by clicking on the appropriate option in Settings and selecting the trash can icon.)
+Rootkit supports Ghost's logo and cover image features, and will work perfectly fine with or without them. If you wish to upload a cover image, it will appear above the rest of the page. An uploaded logo replaces the textual blog name. (If you later decide you don't want a logo or cover image, you can remove it by clicking on the appropriate option in Settings and selecting the trash can icon.)
 
 
 Syntax Higlighting
 ------------------
 
-Solar uses [Prism.js](http://prismjs.com) for syntax highlighting, which works in tandem with fenced Markdown code blocks like so:
+Rootkit uses [Prism.js](http://prismjs.com) for syntax highlighting, which works in tandem with fenced Markdown code blocks like so:
 
 	```language-javascript
 	var t = new Thing("Test!");
@@ -73,10 +84,12 @@ Valid language classes include `language-markup`, `language-css`, `language-java
 To-Do
 -----
 
-* The Jekyll version of Solar has linkblog support, while the Ghost one does not. This is because there isn't a finalized plugin API for Ghost yet, and there is no built-in linkblogging or post meta feature as of yet. This may change as Ghost's feature set is filled out more.
+* Complete light colored theme.
 
 
 License
 -------
 
 GPLv2 or higher
+
+# A fork from [mattvh/solar-theme-ghost](https://github.com/mattvh/solar-theme-ghost)
