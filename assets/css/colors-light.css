@@ -86,6 +86,18 @@ pre.code {
                 url('../img/stripe.gif');
 }
 
+div.prism-show-language-label {
+        text-align: right;
+        border: 1px solid #0a0;
+        border-bottom-width: 0px;
+        border-radius: 3px 3px 3px 3px;
+        font: 1.2em 'Roboto Mono';
+        padding-right;
+        background: linear-gradient( rgba(255, 255, 255, 0.7),
+                rgba(255, 255, 255, 0.9) ),
+                url('../img/stripe.gif');
+}
+
 /*
  * Cursor blinking
  */
