@@ -49,6 +49,44 @@ blockquote {
 	border-color: #0a0;
 }
 
+code {
+        background-color: #000;
+        color: #93a1a1;
+        border: 1px solid #0a0;
+        border-radius: 3px 3px 3px 3px;
+        padding-left: 2px;
+        padding-right: 3px;
+        white-space: pre;
+}
+
+pre code {
+        display: block;
+        overflow: auto;
+        padding: 6px 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        white-space: pre;
+        background: linear-gradient( rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.6) ),
+                url('../img/stripe.gif');
+}
+
+pre.code {
+        background-color: #000;
+        color: #93a1a1;
+        border: 1px solid #0a0;
+        border-radius: 3px 3px 3px 3px;
+        display: block;
+        overflow: auto;
+        padding: 6px 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        white-space: pre;
+        background: linear-gradient( rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.6) ),
+                url('../img/stripe.gif');
+}
+
 /*
  *  * Cursor blinking
  *   */

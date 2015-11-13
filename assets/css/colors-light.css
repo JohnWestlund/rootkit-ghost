@@ -1,25 +1,25 @@
 html, body {
 	background-color: #fdf6e3;
-	color: #839496;
+	color: #444;
 }
 
 a, a:visited, a:active {
-	color: #2aa198;
+	color: #080;
 	border-color: #eee8d5;
 }
 
 a:hover {
-	background-color: #eee8d5;
-	border-color: #eee8d5;
-	color: #2aa198;
+	background-color: #484;
+	border-color: #4A4;
+	color: #020;
 }
 
 h1, h2, h3 {
-	color: #cb4b16;
+	color: #080;
 }
 
 h1 a, h1 a:visited, h1 a:active {
-	color: #cb4b16;
+	color: #080;
 }
 
 h1 a:hover {
@@ -32,25 +32,58 @@ article h1 a.anchor {
 }
 
 blockquote {
-	border-color: #cb4b16;
+	border-color: #080;
 }
 
 #sidebar a:hover {
-	color: #2aa198;
-	background-color: #eee8d5;
+	color: #020;
+	background-color: ##eee8d5;
 }
 
 #footer {
 	border-color: #eee8d5;
 }
 
-pre code{
-	background-color: #eee8d5;
-	color: #657b83;
-	border: 1px solid #d6ceb6;
-    border-radius: 3px 3px 3px 3px;
-    overflow: auto;
-    padding: 6px 10px;
+.post-content img {
+        box-shadow: 10px 10px 5px #030;
+}
+
+code {
+        background-color: #fdf6e3;
+        color: #030;
+        border: 1px solid #060;
+        border-radius: 3px 3px 3px 3px;
+        padding-left: 2px;
+        padding-right: 3px;
+        white-space: pre;
+}
+
+pre code {
+        display: block;
+        overflow: auto;
+        padding: 6px 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        white-space: pre;
+        background: linear-gradient( rgba(255, 255, 255, 0.9),
+                rgba(255, 255, 255, 0.7) ),
+                url('../img/stripe.gif');
+}
+
+pre.code {
+        background-color: #000;
+        color: #93a1a1;
+        border: 1px solid #0a0;
+        border-radius: 3px 3px 3px 3px;
+        display: block;
+        overflow: auto;
+        padding: 6px 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        white-space: pre;
+        background: linear-gradient( rgba(255, 255, 255, 0.9),
+                rgba(255, 255, 255, 0.7) ),
+                url('../img/stripe.gif');
 }
 
 /*
@@ -73,7 +106,7 @@ pre code{
     color: rgba(0, 0, 0, 0.1);
   }
   50% {
-    color: #000; /* Fallback for older browsers */
+    color: #FFF; /* Fallback for older browsers */
     color: rgba(0, 0, 0, 0.5);
   }
 }
@@ -84,7 +117,7 @@ pre code{
     color: rgba(0, 0, 0, 0.1);
   }
   50% {
-    color: #000; /* Fallback for older browsers */
+    color: #FFF; /* Fallback for older browsers */
     color: rgba(0, 0, 0, 0.5);
   }
 }
@@ -95,7 +128,7 @@ pre code{
     color: rgba(0, 0, 0, 0.1);
   }
   50% {
-    color: #000; /* Fallback for older browsers */
+    color: #FFF; /* Fallback for older browsers */
     color: rgba(0, 0, 0, 0.5);
   }
 }
@@ -106,7 +139,7 @@ pre code{
     color: rgba(0, 0, 0, 0.1);
   }
   50% {
-    color: #000; /* Fallback for older browsers */
+    color: #FFF; /* Fallback for older browsers */
     color: rgba(0, 0, 0, 0.5);
   }
 }
@@ -117,7 +150,7 @@ pre code{
     color: rgba(0, 0, 0, 0.1);
   }
   50% {
-    color: #000; /* Fallback for older browsers */
+    color: #FFF; /* Fallback for older browsers */
     color: rgba(0, 0, 0, 0.5);
   }
 }
