@@ -117,13 +117,13 @@ h3 {
 
 /*** Structure ***/
 #page {
-	width: 500px;
+	width: 739px;
 	margin: 0 auto;
 	position: relative;
 }
 
 #header {
-	width: 500px;
+	width: 739px;
 	margin: 40px auto 50px auto;
 }
 #header h1 {
@@ -156,7 +156,7 @@ h3 {
 }
 
 #footer {
-	width: 500px;
+	width: 739px;
 	margin: 50px auto 20px auto;
 	padding-top: 10px;
 	font-size: 0.85em;
@@ -164,16 +164,16 @@ h3 {
 }
 
 #content {
-	width: 500px;
+	width: 739px;
 	margin: 0 auto;
 }
 
 #sidebar {
 	position: absolute;
 	text-align: right;
-	width: 185px;
+	width: 155px;
 	top: 0;
-	left: -220px;
+	left: -180px;
 }
 
 #sidebar li {
@@ -210,6 +210,14 @@ h3 {
 	filter: grayscale(0%);
 }
 
+#sidebar .bio .avatar {
+	text-align: center;
+}
+
+#sidebar .bio h3 {
+	text-align: center;
+}
+
 
 /*** Posts ***/
 article {
@@ -230,7 +238,7 @@ article img {
 	display: block;
 	text-align: center;
 	width: 100%;
-	max-width: 500px;
+	max-width: 739px;
 	cursor: pointer;
 	height: auto;
 	margin: 0 auto 1em auto;
@@ -280,7 +288,7 @@ img.center {
 
 
 /*** Media Queries ***/
-@media all and (max-width: 870px) {
+@media all and (max-width: 1125px) {
 
 	#page, #header, #content, #footer {
 		width: inherit;
