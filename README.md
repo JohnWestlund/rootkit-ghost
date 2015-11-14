@@ -23,7 +23,7 @@ Using your favorite editor, and edit the `default.hbs` file, find
     ga:         'UA-43244208-1',
     gas_client: 'ca-pub-0333905063777933',
     gas_slot:   '8822000487',
-    ad_id:      'header' 
+    ad_id:      'header'
   };
 ```
 
