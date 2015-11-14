@@ -31,7 +31,7 @@ pre[class*="language-"] {
 /* Code blocks */
 pre[class*="language-"] {
 //	padding: 1em;
-	margin: 2em 0 0.25em 0;
+	margin: 0 0 0.25em 0;
 	overflow: auto;
 	border-radius: 0.3em;
 	position: relative;
@@ -181,6 +181,7 @@ pre[data-line] {
 	}
 div.prism-show-language {
 	position: relative;
+	margin-top: 1.5em;
 }
 
 div.prism-show-language > div.prism-show-language-label[data-language] {
@@ -190,7 +191,7 @@ div.prism-show-language > div.prism-show-language-label[data-language] {
 	position: absolute;
 	bottom: auto;
 	left: auto;
-	top: -1em;
+	top: -2em;
 	right: 0;
 	width: auto;
 	height: auto;
