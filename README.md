@@ -31,9 +31,9 @@ and set the properties:
 - `baseurl` The base url of your site, used to help disqus keep track of which comments belong to which page.
 - `disques`  your disqus short name.
 - `ga` your google analytics tracking code.
-- `gas\_client` your google adsense client code.
-- `gas\_slot` your google adsense ad slot code.
-- `ad\_id` where on your side you would like the ads to appear, by default its appened to tags with the `id='header'`
+- `gas_client` your google adsense client code.
+- `gas_slot` your google adsense ad slot code.
+- `ad_id` where on your side you would like the ads to appear, by default its appened to tags with the `id='header'`
 
 After saving the file, you need to restart the ghost server, to make the changes work. And then you're all done!
 
