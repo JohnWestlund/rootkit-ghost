@@ -170,7 +170,7 @@ h3 {
 
 #sidebar {
 	position: absolute;
-	text-align: right;
+	text-align: justify;
 	width: 155px;
 	top: 0;
 	left: -180px;
@@ -210,7 +210,7 @@ h3 {
 	filter: grayscale(0%);
 }
 
-#sidebar .bio .avatar {
+#sidebar .avatar-wrapper {
 	text-align: center;
 }
 
