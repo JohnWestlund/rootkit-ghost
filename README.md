@@ -6,7 +6,7 @@ What's added ?
 
 * Based on the Solar theme by [mattvh/solar-theme-ghost](https://github.com/mattvh/solar-theme-ghost)
     * Changed mobilemenu to slicknav for mobile navigation
-    * Completely re-colored for *nix type goodness
+    * Completely re-colored for \*nix type goodness
     * Avatar grayscale/color on rollover
     * Makes use of 8-bit type fonts for retro feel
     * Added google adsense support
@@ -31,9 +31,9 @@ and set the properties:
 - `baseurl` The base url of your site, used to help disqus keep track of which comments belong to which page.
 - `disques`  your disqus short name.
 - `ga` your google analytics tracking code.
-- `gas_client` your google adsense client code.
-- `gas_slot` your google adsense ad slot code.
-- `ad_id` where on your side you would like the ads to appear, by default its appened to tags with the `id='header'`
+- `gas\_client` your google adsense client code.
+- `gas\_slot` your google adsense ad slot code.
+- `ad\_id` where on your side you would like the ads to appear, by default its appened to tags with the `id='header'`
 
 After saving the file, you need to restart the ghost server, to make the changes work. And then you're all done!
 
@@ -84,7 +84,9 @@ Valid language classes include `language-markup`, `language-css`, `language-java
 To-Do
 -----
 
-* ...
+* The included modified 'Munro' font needs a major overhaul
+    * Make monospaced?
+    * Negative space inside letters doesn't show up on all OS/Browser combos
 
 
 License
