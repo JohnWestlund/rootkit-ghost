@@ -48,7 +48,7 @@ a:hover {
 }
 
 p { margin-bottom: 15px; }
-ul, ol { padding: 0 0 18px 30px; }
+ul, ol { padding: 0 0 0px 30px; }
 ol li, ul li { margin-top: 10px; margin-bottom: 10px; }
 em, i { font-style: italic; }
 strong, b { font-weight: bold; }
@@ -340,6 +340,15 @@ img.center {
 .icon-anchor {
 	font-size: 65%;
 	font-family: 'FontAwesome';
+}
+
+hr {
+    border: 0px;
+    height: 1em;
+    background: linear-gradient( rgba(0, 128, 0, 0.2), rgba(0, 0, 0, 0.6) ),url("../img/stripe.gif");
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 80%;
 }
 
 /*
