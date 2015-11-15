@@ -343,12 +343,13 @@ img.center {
 }
 
 hr {
-    border: 0px;
-    height: 1em;
-    background: linear-gradient( rgba(0, 128, 0, 0.2), rgba(0, 0, 0, 0.6) ),url("../img/stripe.gif");
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    width: 80%;
+  border: 0px;
+  height: 1em;
+  background: linear-gradient( rgba(0, 128, 0, 0.2), rgba(0, 0, 0, 0.6) ),url("../img/stripe.gif");
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  width: 80%;
+  border-radius: 1em;
 }
 
 /*
