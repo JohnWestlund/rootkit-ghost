@@ -2,14 +2,20 @@
 <html>
 <head>
 
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>{{meta_title}}</title>
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width" />
 
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script src="{{asset 'js/prism.js'}}"></script>
+
+  <!-- default values for disqus [baseurl, disqus]
+                Google analytics [ga]
+                Google Adsense   [gas_client, gas_slot]
+    ID where Adsense banner goes [ad_id] e.g. #header
+  --> 
+
   <script>
     var setting = {
       baseurl:    'http://xensoft.com',
@@ -19,35 +25,22 @@
       gas_slot:   '8822000487',
       ad_id:      'header',
     };
-    Prism.plugins.autoloader.languages_path = '/assets/js/components/';
   </script>
 
+  {{> stylesheets}}
 
-  <link href="{{asset 'css/search.css'}}" rel="stylesheet" />
-  <link href="{{asset 'css/prism.css'}}" rel="stylesheet" />
-  <link href="{{asset 'css/style.css'}}" rel="stylesheet" />
-  <link href="{{asset 'css/colors-dark.css'}}" rel="stylesheet" />
-  <!-- <link href="{{asset 'css/colors-light.css'}}" rel="stylesheet" /> -->
-  <link href="{{asset 'css/blueimp-gallery.min.css'}}" rel="stylesheet" />
-  <link href="{{asset 'css/slicknav.css'}}" rel="stylesheet" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>         <!-- Code font -->
-  <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>               <!-- Header font -->
-  <!-- full list of icons at: https://fortawesome.github.io/Font-Awesome/icons/ -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> <!-- Font icon support -->
+  <!-- comment out dark and enable light to switch general theme coloring -->
+  <link href="{{asset 'css/colors-dark.css'}}" rel="stylesheet" />                                            <!-- dark  theme style: enabled -->
+  <!-- <link href="{{asset 'css/colors-light.css'}}" rel="stylesheet" /> -->                                  <!-- light theme style: disabled -->
 
   {{ghost_head}}
-
 </head>
 
 <body class="{{body_class}}">
 
-
-
   {{#if @blog.cover}}
     <div id="coverimg" style="background-image: url({{@blog.cover}})"></div>
   {{/if}}
-
-
 
   <header id="header">
     {{#if @blog.logo}}
@@ -57,8 +50,6 @@
     {{/if}}
     <p>{{@blog.description}}</p>
   </header>
-
-
 
   <div id="page">
 
@@ -79,118 +70,19 @@
         </div>
       {{/if}}
       {{/post}}
-
     </div>
-
-
 
     <div id="content">
       {{{body}}}
     </div>
 
-
-
   </div>
-
-
 
   <footer id="footer">
     <p class="copyright">Copyright &copy; {{date format='YYYY'}} {{@blog.title}}. Powered by <a href="http://ghost.org">Ghost</a>, <a href="https://github.com/JohnWestlund/rootkit-ghost">rootkit</a> theme by <a href="http://xensoft.com">John Westlund</a></p>
   </footer>
 
-  <script src="{{asset 'js/jquery-1.11.3.min.js'}}"></script>
-  <script src="{{asset 'js/jquery.slicknav.min.js'}}"></script>
-  <script src="{{asset 'js/blueimp-gallery.min.js'}}"></script>
-  <script src="{{asset 'js/jquery.ghostHunter.min.js'}}"></script>
   {{> search-modal}}
-
-  <!-- slicknav support -->
-  <script>
-    $(document).ready(function(){
-      var postContent = $('.post-content');
-      $('ul.nav').attr('id', 'menu');
-      $('#menu').slicknav();
-      if (postContent.length) {
-        postContent.find('img').on('click', function () {
-          var img = $(this).attr('src');
-          blueimp.Gallery([img]);
-        });
-      }
-    });
-  </script>
-  <!-- end slicknav support -->
-
-  <!-- google analytics support -->
-  <script>
-    // Google Analytics Script
-    if (setting.ga) {
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', setting.ga, 'auto');
-      ga('send', 'pageview');
-    }
-  </script>
-  <!-- end google analytics support -->
-
-  <!-- google adsense support -->
-  <script>
-  if (setting.gas_client && setting.gas_slot) {
-      var div = document.createElement('div');
-      div.className = 'googleAdSense';
-      div.innerHTML = '<!-- ' + setting.baseurl + ' --> \
-        <ins class="adsbygoogle" \
-          style="display:block" \
-          data-ad-client="' + setting.gas_client + '" \
-          data-ad-slot="' + setting.gas_slot + '" \
-          data-ad-format="auto"></ins>';
-
-      document.getElementById(setting.ad_id).appendChild(div);
-  }
-  </script>
-  
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-  <!-- end google adsense support -->
-
-<script>
-  $('#search-open').on('click', function(e) {
-    e.preventDefault();
-    $('#search-in').css('visibility', 'visible').focus();
-    $('.search-modal').css('opacity', 100);
-    $('.search-modal').addClass('visible');
-  });
-</script>
-<script>
-  $('.close-button').on('click', function(e) {
-    e.preventDefault();
-    $('#search-in').css('visibility', 'hidden');
-    $('.search-modal').css('opacity', 0);
-    $('.search-modal').removeClass('visible');
-  });
-</script>
-<script>
-  $('#modal-outer').on('click', function(e) {
-    if(e.target.id === 'modal-outer') {
-      $('#search-in').css('visibility', 'hidden');
-      $('.search-modal').css('opacity', 0);
-      $('.search-modal').removeClass('visible');
-    }
-  });
-</script>
-<script>
-  $('#search-in').ghostHunter({
-    results: "#search-results ul",
-    zeroResultsInfo     : false,
-    onKeyUp             : true,
-    info_template       : '<li class="info">Number of posts found: \{\{amount\}\}</li>',
-    result_template     : "<li><a href=\"\{\{link\}\}\"><i class=\"fa fa-space-shuttle\"></i>\{\{title\}\}</a></li>",
-  });
-</script>
-
+  {{> js-footer}}
 </body>
 </html>
