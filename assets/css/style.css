@@ -78,19 +78,19 @@ acronym, abbr {
 
 
 h1 {
-	font: 2.5em 'Munro';
+	font: 3em 'Munro';
 	margin: 0 0 10px 0;
 	font-smooth: never;
 	-webkit-font-smoothing : none;
 }
 h2 {
-	font: 2em 'Munro';
+	font: 2.5em 'Munro';
 	margin: 0 0 10px 0;
 	font-smooth: never;
 	-webkit-font-smoothing : none;
 }
 h3 {
-	font: 1.5em 'Munro';
+	font: 2em 'Munro';
 	margin: 0 0 10px 0;
 	font-smooth: never;
 	-webkit-font-smoothing : none;
