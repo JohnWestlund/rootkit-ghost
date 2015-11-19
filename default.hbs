@@ -11,17 +11,19 @@
   <![endif]-->
   <script src="{{asset 'js/prism.js'}}"></script>
   <script>
-  var setting = {
-    baseurl:    'http://xensoft.com',
-    disqus:     'xensoft',
-    ga:         'UA-43244208-1',
-    gas_client: 'ca-pub-0333905063777933',
-    gas_slot:   '8822000487',
-    ad_id:      'header',
-  };
-  Prism.plugins.autoloader.languages_path = '/assets/js/components/';
+    var setting = {
+      baseurl:    'http://xensoft.com',
+      disqus:     'xensoft',
+      ga:         'UA-43244208-1',
+      gas_client: 'ca-pub-0333905063777933',
+      gas_slot:   '8822000487',
+      ad_id:      'header',
+    };
+    Prism.plugins.autoloader.languages_path = '/assets/js/components/';
   </script>
 
+
+  <link href="{{asset 'css/search.css'}}" rel="stylesheet" />
   <link href="{{asset 'css/prism.css'}}" rel="stylesheet" />
   <link href="{{asset 'css/style.css'}}" rel="stylesheet" />
   <link href="{{asset 'css/colors-dark.css'}}" rel="stylesheet" />
@@ -60,10 +62,8 @@
 
   <div id="page">
 
-
-
     <div id="sidebar">
-
+      <p><a href="#" id="search-open"><i class="fa fa-search"></i></a></p>
       <div id="navigate">
         {{navigation}}
       </div>
@@ -98,13 +98,11 @@
     <p class="copyright">Copyright &copy; {{date format='YYYY'}} {{@blog.title}}. Powered by <a href="http://ghost.org">Ghost</a>, <a href="https://github.com/JohnWestlund/rootkit-ghost">rootkit</a> theme by <a href="http://xensoft.com">John Westlund</a></p>
   </footer>
 
-
-
-  {{ghost_foot}}
-
   <script src="{{asset 'js/jquery-1.11.3.min.js'}}"></script>
   <script src="{{asset 'js/jquery.slicknav.min.js'}}"></script>
   <script src="{{asset 'js/blueimp-gallery.min.js'}}"></script>
+  <script src="{{asset 'js/jquery.ghostHunter.min.js'}}"></script>
+  {{> search-modal}}
 
   <!-- slicknav support -->
   <script>
@@ -158,6 +156,41 @@
   (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
   <!-- end google adsense support -->
+
+<script>
+  $('#search-open').on('click', function(e) {
+    e.preventDefault();
+    $('#search-in').css('visibility', 'visible').focus();
+    $('.search-modal').css('opacity', 100);
+    $('.search-modal').addClass('visible');
+  });
+</script>
+<script>
+  $('.close-button').on('click', function(e) {
+    e.preventDefault();
+    $('#search-in').css('visibility', 'hidden');
+    $('.search-modal').css('opacity', 0);
+    $('.search-modal').removeClass('visible');
+  });
+</script>
+<script>
+  $('#modal-outer').on('click', function(e) {
+    if(e.target.id === 'modal-outer') {
+      $('#search-in').css('visibility', 'hidden');
+      $('.search-modal').css('opacity', 0);
+      $('.search-modal').removeClass('visible');
+    }
+  });
+</script>
+<script>
+  $('#search-in').ghostHunter({
+    results: "#search-results ul",
+    zeroResultsInfo     : false,
+    onKeyUp             : true,
+    info_template       : '<li class="info">Number of posts found: \{\{amount\}\}</li>',
+    result_template     : "<li><a href=\"\{\{link\}\}\"><i class=\"fa fa-space-shuttle\"></i>\{\{title\}\}</a></li>",
+  });
+</script>
 
 </body>
 </html>
