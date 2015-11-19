@@ -42,40 +42,43 @@
     <div id="coverimg" style="background-image: url({{@blog.cover}})"></div>
   {{/if}}
 
-  <header id="header">
-    {{#if @blog.logo}}
-      <a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" /></a>
-    {{else}}
-      <h1><a href="{{@blog.url}}"><span class="root_red"><i class="fa fa-lg fa-linux"></i>#</span> {{@blog.title}}</a></h1>
-    {{/if}}
-    <p>{{@blog.description}}</p>
-  </header>
-
-  <div id="sidebar">
-    <a href="#" id="search-open"><i class="fa fa-search"></i></a>
-    <div id="navigate">
-      {{navigation}}
-    </div>
-
-    {{#post}}
-    {{#if author}}
-      <div class="bio">
-        <div class="avatar-wrapper">
-          <span class="avatar" style="background-image:url({{author.image}})"></span>
-        </div>
-        <h3>{{author.name}}</h3>
-        <p>{{author.bio}}</p>
+  <div id="main">
+    <div id="sidebar">
+      <a href="#" id="search-open"><i class="fa fa-search"></i></a>
+      <div id="navigate">
+        {{navigation}}
       </div>
-    {{/if}}
-    {{/post}}
-  </div>
-
-  <div id="page">
-
-    <div id="content">
-      {{{body}}}
+  
+      {{#post}}
+      {{#if author}}
+        <div class="bio">
+          <div class="avatar-wrapper">
+            <span class="avatar" style="background-image:url({{author.image}})"></span>
+          </div>
+          <h3>{{author.name}}</h3>
+          <p>{{author.bio}}</p>
+        </div>
+      {{/if}}
+      {{/post}}
     </div>
+  
+    <div id="right-pane">
+      <header id="header">
+        {{#if @blog.logo}}
+          <a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" /></a>
+        {{else}}
+          <h1><a href="{{@blog.url}}"><span class="root_red"><i class="fa fa-lg fa-linux"></i>#</span> {{@blog.title}}</a></h1>
+        {{/if}}
+        <p>{{@blog.description}}</p>
+      </header>
+  
+      <div id="page">
+        <div id="content">
+          {{{body}}}
+        </div>
+      </div>
 
+    </div>
   </div>
 
   <footer id="footer">

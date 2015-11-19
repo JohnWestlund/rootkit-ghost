@@ -56,6 +56,12 @@ small { font-size: 0.85em; }
 sup { vertical-align: super; font-size: 0.85em; }
 sub { vertical-align: sub; font-size: 0.85em; }
 
+#main {
+  text-align: center;
+  margin: auto;
+  max-width: 1070px;
+}
+
 code {
     font: 1em 'Roboto Mono';
     white-space: nowrap;
@@ -120,11 +126,13 @@ h3 {
 	width: 739px;
 	margin: 0 auto;
 	position: relative;
+  text-align: left;`
 }
 
 #header {
 	width: 739px;
 	margin: 40px auto 50px auto;
+  text-align: left;
 }
 #header h1 {
 	font-size: 4em;
@@ -172,11 +180,12 @@ h3 {
 }
 
 #sidebar {
-	position: absolute;
-	text-align: justify;
-	width: 155px;
-	top: 0px;
-	left: 10px;
+  float: left;
+  text-align: justify;
+  width: 155px;
+  top: 0px;
+  margin-right: 15px;
+  margin: auto;
 }
 
 #sidebar li {
