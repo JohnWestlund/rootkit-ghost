@@ -109,7 +109,6 @@
   visibility: visible;
 }
 #search-open {
-  position: absolute;
   right: 0;
   margin-right: 15px;
   line-height: 48px;

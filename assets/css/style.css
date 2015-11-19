@@ -167,17 +167,22 @@ h3 {
 	margin: 0 auto;
 }
 
+#menu.nav {
+  min-height: 15em;
+}
+
 #sidebar {
 	position: absolute;
 	text-align: justify;
 	width: 155px;
 	top: 0px;
-	left: -180px;
+	left: 10px;
 }
 
 #sidebar li {
 	list-style: none;
 	margin: 2px 0;
+  line-height: 2.25em;
 }
 
 #sidebar a {

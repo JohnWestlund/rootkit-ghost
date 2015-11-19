@@ -51,26 +51,26 @@
     <p>{{@blog.description}}</p>
   </header>
 
-  <div id="page">
-
-    <div id="sidebar">
-      <p><a href="#" id="search-open"><i class="fa fa-search"></i></a></p>
-      <div id="navigate">
-        {{navigation}}
-      </div>
-
-      {{#post}}
-      {{#if author}}
-        <div class="bio">
-          <div class="avatar-wrapper">
-            <span class="avatar" style="background-image:url({{author.image}})"></span>
-          </div>
-          <h3>{{author.name}}</h3>
-          <p>{{author.bio}}</p>
-        </div>
-      {{/if}}
-      {{/post}}
+  <div id="sidebar">
+    <a href="#" id="search-open"><i class="fa fa-search"></i></a>
+    <div id="navigate">
+      {{navigation}}
     </div>
+
+    {{#post}}
+    {{#if author}}
+      <div class="bio">
+        <div class="avatar-wrapper">
+          <span class="avatar" style="background-image:url({{author.image}})"></span>
+        </div>
+        <h3>{{author.name}}</h3>
+        <p>{{author.bio}}</p>
+      </div>
+    {{/if}}
+    {{/post}}
+  </div>
+
+  <div id="page">
 
     <div id="content">
       {{{body}}}
