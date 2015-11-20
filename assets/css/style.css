@@ -13,9 +13,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: bullet;
-}
 blockquote, q {
 	quotes: none;
 }
@@ -48,7 +45,10 @@ a:hover {
 }
 
 p { margin-bottom: 15px; }
-ul, ol { padding: 0 0 0px 30px; }
+ul, ol {
+  padding: 0 0 0px 30px;
+	list-style: lower-greek;
+}
 ol li, ul li { margin-top: 10px; margin-bottom: 10px; }
 em, i { font-style: italic; }
 strong, b { font-weight: bold; }
@@ -177,6 +177,8 @@ h3 {
 
 #menu.nav {
   min-height: 15em;
+  font-size: 90%;
+  padding: 0px;
 }
 
 #sidebar {
