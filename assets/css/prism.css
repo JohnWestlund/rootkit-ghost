@@ -7,8 +7,8 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-	// color: #f8f8f2;                        <v move to light/dark.css
-	// text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	/* color: #f8f8f2;                        <v move to light/dark.css
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3); */
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	direction: ltr;
 	text-align: left;
@@ -30,7 +30,7 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-//	padding: 1em;
+/*	padding: 1em; */
 	margin: 0 -1px 0.25em 0;
 	overflow: auto;
 	border-radius: 0.3em;
@@ -38,7 +38,7 @@ pre[class*="language-"] {
 	z-index: 5;
 }
 
-// Use BG color from the rest of the page
+/* Use BG color from the rest of the page */
 /* :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	background: #272822;
@@ -58,12 +58,12 @@ pre[class*="language-"] {
 	color: slategray;
 }
 
-// move to light/dark.css
+/* move to light/dark.css */
 /* .token.punctuation {
 	color: #f8f8f2;
 } */
 
-// added
+/* added */
 .token.delimiter {
 	color: purple;
 }
@@ -91,7 +91,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: deeppink;
+	color: red;
 }
 
 /* moved to light/dark.css */
@@ -104,6 +104,10 @@ pre[class*="language-"] {
 	color: #f8f8f2;
 }
 */
+/*added*/
+.token.operator {
+  color: #D04F4F;
+}
 
 .token.atrule,
 .token.attr-value,
@@ -112,7 +116,7 @@ pre[class*="language-"] {
 }
 
 .token.keyword {
-	color: blue;
+	color: #44f;
 }
 
 .token.regex,
@@ -185,8 +189,8 @@ div.prism-show-language {
 }
 
 div.prism-show-language > div.prism-show-language-label[data-language] {
-//	color: black;
-//	background-color: #CFCFCF;
+/*	color: black; */
+/*	background-color: #CFCFCF; */
 	display: inline-block;
 	position: absolute;
 	bottom: auto;

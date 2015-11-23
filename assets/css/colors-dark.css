@@ -104,7 +104,7 @@ pre[class*="language-"] {
 }
 
 .token.punctuation {
-	color: #f8f8f2;
+	color: darkorange;
 }
 
 .token.entity,
@@ -112,7 +112,7 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-	color: lightblue;
+	color: #32B8E4;
 }
 
 /*
