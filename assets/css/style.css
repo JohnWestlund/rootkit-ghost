@@ -84,19 +84,19 @@ acronym, abbr {
 
 
 h1 {
-	font: 3em 'Munro';
+	font: 3em 'VT323';
 	margin: 0 0 10px 0;
 	font-smooth: never;
 	-webkit-font-smoothing : none;
 }
 h2 {
-	font: 2.5em 'Munro';
+	font: 2.5em 'VT323';
 	margin: 0 0 10px 0;
 	font-smooth: never;
 	-webkit-font-smoothing : none;
 }
 h3 {
-	font: 2em 'Munro';
+	font: 2em 'VT323';
 	margin: 0 0 10px 0;
 	font-smooth: never;
 	-webkit-font-smoothing : none;
@@ -135,7 +135,7 @@ h3 {
   text-align: left;
 }
 #header h1 {
-	font-size: 4em;
+  font: 4em 'Munro';
 	margin-bottom: 4px;
 }
 #header h1 a {
